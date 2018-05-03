@@ -8,6 +8,11 @@ class Student
   end
   
   def create_table
-    DB[:conn].execute(CREATE TABLE students ( id INTEGER PRIMARY KEY, name TEXT, grade INTEGER);)
+    DB[:conn].execute(CREATE TABLE students ( 
+      id INTEGER PRIMARY KEY, 
+      name TEXT, 
+      grade INTEGER
+      );
+      )
   end
 end
