@@ -7,4 +7,6 @@ class Student
     @id = id
   end
   
+  def create_table
+    DB[:conn].execute
 end
