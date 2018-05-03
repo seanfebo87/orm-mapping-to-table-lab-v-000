@@ -8,5 +8,5 @@ class Student
   end
   
   def create_table
-    DB[:conn].execute()
+    DB[:conn].execute(CREATE TABLE students ())
 end
