@@ -8,7 +8,7 @@ class Student
   end
   
   def create_table
-    sql = 
+    sql = <<-SQL
     DB[:conn].execute(CREATE TABLE students ( 
       id INTEGER PRIMARY KEY, 
       name TEXT, 
